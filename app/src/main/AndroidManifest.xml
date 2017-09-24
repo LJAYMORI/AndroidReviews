@@ -11,7 +11,7 @@
     android:theme="@style/AppTheme">
 
     <!-- Main Activity -->
-    <activity android:name=".java.MainActivity">
+    <activity android:name=".MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +20,10 @@
     </activity>
 
     <!-- Life Cycle Activity -->
-    <activity android:name=".java.lifecycle.LifeCycleActivity"/>
+    <activity android:name=".java.lifecycle.LifeCycleActivity" />
+
+    <!-- Recycler View Activity -->
+    <activity android:name=".kotlin.recycler.RecyclerViewActivity"/>
 
   </application>
 

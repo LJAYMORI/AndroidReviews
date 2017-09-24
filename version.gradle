@@ -1,0 +1,5 @@
+ext {
+    version_android_support = '25.3.1'
+    version_kotlin = '1.1.50'
+}
+
