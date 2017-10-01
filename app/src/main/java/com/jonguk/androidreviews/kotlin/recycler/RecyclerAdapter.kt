@@ -1,6 +1,7 @@
 package com.jonguk.androidreviews.kotlin.recycler
 
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.jonguk.androidreviews.R
@@ -9,6 +10,8 @@ import com.jonguk.androidreviews.R
  * Created by Jonguk on 2017. 9. 24..
  */
 class RecyclerAdapter : RecyclerView.Adapter<RecyclerViewHolder>() {
+
+    private val TAG = "RecyclerAdapter"
 
     private val mItems = arrayListOf<String>()
 
@@ -32,4 +35,11 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerViewHolder>() {
         holder?.bind(mItems[position])
     }
 
+    override fun onViewAttachedToWindow(holder: RecyclerViewHolder?) {
+        Log.d(TAG, "onViewAttachedToWindow - position : " + (holder?.layoutPosition ?: "no position"))
+    }
+
+    override fun onViewDetachedFromWindow(holder: RecyclerViewHolder?) {
+        Log.d(TAG, "onViewDetachedFromWindow - position : " + (holder?.layoutPosition ?: "no position"))
+    }
 }
