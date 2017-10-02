@@ -12,8 +12,8 @@ class RecyclerViewActivityKt : BaseActivity() {
     private val adapter = RecyclerAdapterKt()
 
     companion object {
-        @JvmStatic fun newIntent(context: Context): Intent =
-                Intent(context, RecyclerViewActivityKt::class.java)
+        @JvmStatic fun newIntent(context: Context):
+                Intent = Intent(context, RecyclerViewActivityKt::class.java)
     }
 
     override fun getLayoutId(): Int = R.layout.activity_recycler

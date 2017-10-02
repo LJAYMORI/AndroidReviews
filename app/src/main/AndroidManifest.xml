@@ -24,6 +24,9 @@
     <!-- Recycler View Activity -->
     <activity android:name=".java.recycler.RecyclerViewActivity" />
 
+
+    <!-- Life Cycle Activity _ Kotlin -->
+    <activity android:name=".kotlin.lifecycle.LifeCycleActivityKt" />
     <!-- Recycler View Activity _ Kotlin -->
     <activity android:name=".kotlin.recycler.RecyclerViewActivityKt" />
 
