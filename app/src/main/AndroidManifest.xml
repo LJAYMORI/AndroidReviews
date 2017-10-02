@@ -21,9 +21,11 @@
 
     <!-- Life Cycle Activity -->
     <activity android:name=".java.lifecycle.LifeCycleActivity" />
-
     <!-- Recycler View Activity -->
-    <activity android:name=".kotlin.recycler.RecyclerViewActivity"/>
+    <activity android:name=".java.recycler.RecyclerViewActivity" />
+
+    <!-- Recycler View Activity _ Kotlin -->
+    <activity android:name=".kotlin.recycler.RecyclerViewActivityKt" />
 
   </application>
 

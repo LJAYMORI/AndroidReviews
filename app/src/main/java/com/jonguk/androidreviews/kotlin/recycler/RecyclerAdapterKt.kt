@@ -9,9 +9,9 @@ import com.jonguk.androidreviews.R
 /**
  * Created by Jonguk on 2017. 9. 24..
  */
-class RecyclerAdapter : RecyclerView.Adapter<RecyclerViewHolder>() {
+class RecyclerAdapterKt : RecyclerView.Adapter<RecyclerViewHolderKt>() {
 
-    private val TAG = "RecyclerAdapter"
+    private val TAG = "RecyclerAdapterKt"
 
     private val mItems = arrayListOf<String>()
 
@@ -27,19 +27,19 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerViewHolder>() {
 
     override fun getItemCount(): Int = mItems.size
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): RecyclerViewHolder =
-            RecyclerViewHolder(LayoutInflater.from(parent?.context)
+    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): RecyclerViewHolderKt =
+            RecyclerViewHolderKt(LayoutInflater.from(parent?.context)
                     .inflate(R.layout.item_recycler, parent, false))
 
-    override fun onBindViewHolder(holder: RecyclerViewHolder?, position: Int) {
+    override fun onBindViewHolder(holder: RecyclerViewHolderKt?, position: Int) {
         holder?.bind(mItems[position])
     }
 
-    override fun onViewAttachedToWindow(holder: RecyclerViewHolder?) {
+    override fun onViewAttachedToWindow(holder: RecyclerViewHolderKt?) {
         Log.d(TAG, "onViewAttachedToWindow - position : " + (holder?.layoutPosition ?: "no position"))
     }
 
-    override fun onViewDetachedFromWindow(holder: RecyclerViewHolder?) {
+    override fun onViewDetachedFromWindow(holder: RecyclerViewHolderKt?) {
         Log.d(TAG, "onViewDetachedFromWindow - position : " + (holder?.layoutPosition ?: "no position"))
     }
 }

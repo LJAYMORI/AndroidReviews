@@ -7,13 +7,13 @@ import com.jonguk.androidreviews.R
 import com.jonguk.androidreviews.utils.BaseActivity
 import kotlinx.android.synthetic.main.activity_recycler.*
 
-class RecyclerViewActivity : BaseActivity() {
+class RecyclerViewActivityKt : BaseActivity() {
 
-    private val adapter = RecyclerAdapter()
+    private val adapter = RecyclerAdapterKt()
 
     companion object {
         @JvmStatic fun newIntent(context: Context): Intent =
-                Intent(context, RecyclerViewActivity::class.java)
+                Intent(context, RecyclerViewActivityKt::class.java)
     }
 
     override fun getLayoutId(): Int = R.layout.activity_recycler
