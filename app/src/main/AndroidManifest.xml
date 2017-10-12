@@ -19,6 +19,9 @@
       </intent-filter>
     </activity>
 
+    <!-- Dummy Activity -->
+    <activity android:name=".etc.DummyActivity" />
+
     <!-- Life Cycle Activity -->
     <activity android:name=".java.lifecycle.LifeCycleActivity" />
     <!-- Recycler View Activity -->

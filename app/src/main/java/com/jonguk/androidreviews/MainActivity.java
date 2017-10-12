@@ -29,7 +29,6 @@ public class MainActivity extends BaseActivity {
                 startActivity(RecyclerViewActivity.newIntent(this)));
 
 
-
         // Kotlin
         // 01. Life cycle
         findViewById(R.id.main_kotlin_life_cycle_button).setOnClickListener(v ->

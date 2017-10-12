@@ -20,7 +20,7 @@ import butterknife.BindView;
 
 public class LifeCycleFragment extends BaseFragment {
 
-    private static final String TAG = "lc-fragment";
+    private static final String TAG = "LifeCycleFragment";
     private static final String EXTRA_TEXT = "text";
 
     @BindView(R.id.life_cycle_text) TextView mTextView;
@@ -74,6 +74,12 @@ public class LifeCycleFragment extends BaseFragment {
     public void onResume() {
         super.onResume();
         Log.d(TAG, "onResume() called - " + mText);
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        Log.d(TAG, "setUserVisibleHint() called - " + mText + ", visible:" + isVisibleToUser);
     }
 
     @Override
